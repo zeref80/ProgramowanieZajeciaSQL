@@ -1,0 +1,5 @@
+imiê: Adam
+nazwisko: Pawlak
+e-mail: adampawlak2002@gmail.com
+szko³a: PLOP£
+klasa: 2GE
