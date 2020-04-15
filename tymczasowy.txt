@@ -1,0 +1,758 @@
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	queue < int > kolejkaLiczb;
+
+	cout << "Podaj 5 liczb: ";
+	int liczba, liczba1, liczba2, liczba3, liczba4;
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+	cout << liczba;
+	cout << liczba1;
+	cout << liczba2;
+	cout << liczba3;
+	cout << liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() <<  endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+
+	_getch();
+	return 0;
+}
+
+
+
+
+///////////////////////////////////////
+
+
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+queue < int > kolejkaLiczb;
+void TworzenieKolejki()
+{
+	cout << "Podaj 5 liczb: ";
+	int liczba, liczba1, liczba2, liczba3, liczba4;
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+	cout << liczba;
+	cout << liczba1;
+	cout << liczba2;
+	cout << liczba3;
+	cout << liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+	_getch();
+}
+void display_menu2()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************MENU********************" << endl;
+		cout << "1.Tworzenie kolejki" << endl;
+		cout << "2.Funkcja 1" << endl;
+		cout << "3.Powrot do glownego menu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			TworzenieKolejki();
+			break;
+		case 2:
+			cout << "2.Sortowanie liczb" << endl;
+			break;
+		case 3:
+			break;
+		}
+		system("cls");
+	} while (wybor != 3);
+
+}
+void display_menu()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************GLOWNE MENU********************" << endl;
+		cout << "1.Kolejka w praktyce" << endl;
+		cout << "2.Kolejka w teorii" << endl;
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			display_menu2();
+			break;
+		case 2:
+			cout << "2.Sortowanie liczb" << endl;
+			break;
+		case 3:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+
+
+int main()
+{
+	display_menu();
+
+	return 0;
+}
+
+
+
+
+
+
+
+//////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+queue < int > kolejkaLiczb;
+void TworzenieKolejki()
+{
+	cout << "Podaj 5 liczb: ";
+	int liczba, liczba1, liczba2, liczba3, liczba4;
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+	cout << liczba;
+	cout << liczba1;
+	cout << liczba2;
+	cout << liczba3;
+	cout << liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+	_getch();
+}
+void display_menu2()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************MENU********************" << endl;
+		cout << "1.Tworzenie kolejki" << endl;
+		cout << "2.Funkcja 1" << endl;
+		cout << "3.Powrot do glownego menu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			TworzenieKolejki();
+			break;
+		case 2:
+			cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+			break;
+		case 3:
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+void display_menu()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************GLOWNE MENU********************" << endl;
+		cout << "1.Kolejka w praktyce" << endl;
+		cout << "2.Kolejka w teorii" << endl;
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			display_menu2();
+			break;
+		case 2:
+			cout << "2.Sortowanie liczb" << endl;
+			break;
+		case 3:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+
+
+int main()
+{
+	display_menu();
+
+	return 0;
+}
+
+
+
+
+
+
+
+///////////////////////////
+
+
+
+
+
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+#include <algorithm>   
+#include <vector>      
+
+using namespace std;
+
+queue < int > kolejkaLiczb;
+
+//int liczba, liczba1, liczba2, liczba3, liczba4;
+int liczba = 4;
+int liczba1 = 45;
+int liczba2 = 24;
+int liczba3 = 754;
+int liczba4 = 14;
+int tabint[] = { liczba, liczba1, liczba2, liczba3, liczba4 };
+
+vector<int> vektor(tabint, tabint + 5);
+void TworzenieKolejki()
+{
+	cout << "Podaj 5 liczb: ";
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+	cout << liczba;
+	cout << liczba1;
+	cout << liczba2;
+	cout << liczba3;
+	cout << liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+	_getch();
+	system("cls");
+}
+void display_menu2()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************MENU********************" << endl;
+		cout << "1.Tworzenie kolejki" << endl;
+		cout << "2.Sortowanie kolejki" << endl;
+		cout << "3.Powrot do glownego menu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			cout << "1.Tworzenie kolejki" << endl;
+			break;
+		case 2:
+			cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+			sort(vektor.begin(), vektor.begin() + 5);
+			for (vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				cout << ' ' << *it;
+			cout << '\n';
+			break;
+		case 3:
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+void display_menu()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************GLOWNE MENU********************" << endl;
+		cout << "1.Kolejka w praktyce" << endl;
+		cout << "2.Kolejka w teorii" << endl;
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			TworzenieKolejki();
+			display_menu2();
+			break;
+		case 2:
+			cout << "2.Sortowanie liczb" << endl;
+			break;
+		case 3:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+
+
+int main()
+{
+	display_menu();
+
+	return 0;
+}
+
+
+
+
+///////////////
+
+
+
+
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+#include <algorithm>   
+#include <vector>      
+
+using namespace std;
+
+queue < int > kolejkaLiczb;
+
+int liczba, liczba1, liczba2, liczba3, liczba4;
+//int liczba = 4;
+//int liczba1 = 45;
+//int liczba2 = 24;
+//int liczba3 = 754;
+//int liczba4 = 14;
+void Teoria()
+{
+	cout << "Teoria" << endl;
+}
+void TworzenieKolejki()
+{
+	cout << "Podaj 5 liczb: ";
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+	_getch();
+	system("cls");
+}
+void display_menu_sort()
+{
+	int wybor;
+	int ilosc_posortowanych_liczb;
+	int n_element_posortowanych_liczb;
+	int tabint[] = { liczba, liczba1, liczba2, liczba3, liczba4 };
+
+	vector<int> vektor(tabint, tabint + 5);
+
+	do
+	{
+		cout << "*******************SORT MENU********************" << endl;
+		cout << "1.Sortowanie calosci" << endl;  //[15:15]
+		cout << "2.Sortowanie pierwszych wybranych paru liczb" << endl; //[15:30]
+		cout << "3.Sortowanie do n-tego elementu" << endl; //[15:30]
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+			sort(vektor.begin(), vektor.begin() + 5);
+			for (vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				cout << ' ' << *it;
+			cout << '\n';
+			cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+			break;
+		case 2:
+			cout << "Ile pierwszych liczb chcesz posortowaæ?" << endl;
+			cin >> ilosc_posortowanych_liczb;
+
+			partial_sort(vektor.begin(), vektor.begin() + ilosc_posortowanych_liczb, vektor.end());
+			for ( vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				 cout << ' ' << *it;
+			 cout << '\n';
+			break;
+		case 3:
+			cout << "Do którego elementu posortowaæ?" << endl;
+			cin >> n_element_posortowanych_liczb;
+			nth_element(vektor.begin(), vektor.begin() + 5, vektor.end());
+			for (std::vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				std::cout << ' ' << *it;
+			std::cout << '\n';
+			break;
+		case 4:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		case 5:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 5);
+
+}
+void display_menu2()
+{
+
+	int wybor;
+	do
+	{
+		cout << "Jakie operacje chcesz przeprowadzic?" << endl;
+		cout << "1.Sortowanie" << endl;
+		cout << "2.Permutacje" << endl;
+		cout << "3.Powrot do glownego menu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			display_menu_sort();
+			break;
+		case 2:
+			cout << "Permutacje" << endl;
+			break;
+		case 3:
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+void display_menu()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************GLOWNE MENU********************" << endl;
+		cout << "1.Kolejka w praktyce" << endl;
+		cout << "2.Kolejka w teorii" << endl;
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			TworzenieKolejki();
+			display_menu2();
+			break;
+		case 2:
+			Teoria();
+			break;
+		case 3:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+
+
+int main()
+{
+	display_menu();
+
+	return 0;
+}
+
+
+
+//////
+
+
+
+#include "pch.h"
+#include <queue>
+#include <iostream>
+#include <conio.h>
+#include <algorithm>   
+#include <vector> 
+#include <cstdlib>
+#include <locale.h>
+
+using namespace std;
+
+
+queue < int > kolejkaLiczb;
+
+int liczba, liczba1, liczba2, liczba3, liczba4;
+//int liczba = 4;
+//int liczba1 = 45;
+//int liczba2 = 24;
+//int liczba3 = 754;
+//int liczba4 = 14;
+int Random()
+{ 
+	return (rand() % 100); 
+}
+
+void Teoria()
+{
+	cout << "Teoria" << endl;
+}
+void TworzenieKolejki()
+{
+	cout << "Podaj 5 liczb: ";
+	cin >> liczba >> liczba1 >> liczba2 >> liczba3 >> liczba4;
+
+	kolejkaLiczb.push(liczba);
+	kolejkaLiczb.push(liczba1);
+	kolejkaLiczb.push(liczba2);
+	kolejkaLiczb.push(liczba3);
+	kolejkaLiczb.push(liczba4);
+
+
+	cout << "Pierwsza liczba w kolejce to: " << kolejkaLiczb.front() << endl;
+
+	cout << "Ostatnia liczba w kolejce to: " << kolejkaLiczb.back() << endl;
+
+	cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
+	_getch();
+	system("cls");
+}
+
+void display_menu_operations()
+{
+	int wybor;
+	int ilosc_posortowanych_liczb;
+	int n_element_posortowanych_liczb;
+	int tabint[] = { liczba, liczba1, liczba2, liczba3, liczba4 };
+
+	vector<int> vektor(tabint, tabint + 5);
+
+	auto result = minmax_element(vektor.begin(), vektor.end());
+
+	do
+	{
+		cout << "Co chcesz wyœwietliæ?" << endl;
+		cout << "1.Sortowanie calosci" << endl;  //[15:15]
+		cout << "2.Sortowanie pierwszych wybranych paru liczb" << endl; //[15:30]
+		cout << "3.Sortowanie do n-tego elementu" << endl; //[16:00]
+		cout << "4.Waroœci min-max" << endl; //[16:00]
+		cout << "5.Sortowanie do n-tego elementu" << endl; //[16:00]
+		cout << "6.Sortowanie do n-tego elementu" << endl; //[16:00]
+		cout << "7.Wygeneruj nowy zespo³ liczb" << endl; //
+		cout << "8.Wyœwietl liczby" << endl; //
+		cout << "9.Wyjscie z podmenu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			sort(vektor.begin(), vektor.begin() + 5);
+			for (vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				cout << ' ' << *it;
+			cout << '\n';
+			break;
+		case 2:
+			cout << "Ile pierwszych liczb chcesz posortowaæ?" << endl;
+			cin >> ilosc_posortowanych_liczb;
+
+			partial_sort(vektor.begin(), vektor.begin() + ilosc_posortowanych_liczb, vektor.end());
+			for ( vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				 cout << ' ' << *it;
+			 cout << '\n';
+			break;
+		case 3:
+			cout << "Do którego elementu posortowaæ?" << endl;
+			cin >> n_element_posortowanych_liczb;
+			nth_element(vektor.begin(), vektor.begin() + n_element_posortowanych_liczb, vektor.end());
+			for ( vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				 cout << ' ' << *it;
+			 cout << '\n';
+			break;
+		case 4:
+			cout << "Minimalnym elementem jest " << *result.first;
+			cout << " na pozycji " << (result.first - vektor.begin()) << '\n';
+			cout << "Maksymalnym elementem jest " << *result.second;
+			cout << " na pozycji " << (result.second - vektor.begin()) << '\n';
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		case 7:
+			generate(vektor.begin(), vektor.end(), Random);
+			for ( vector<int>::iterator it = vektor.begin(); it != vektor.end(); ++it)
+				 cout << ' ' << *it;
+			 cout << '\n';
+
+			break;
+		case 8:
+			
+			break;
+		case 9:
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 9);
+
+}
+
+void display_menu()
+{
+	int wybor;
+	do
+	{
+		cout << "*******************GLOWNE MENU********************" << endl;
+		cout << "1.Kolejka w praktyce" << endl;
+		cout << "2.Kolejka w teorii" << endl;
+		cout << "3.Wyjscie z programu." << endl;
+		cout << "Wybieram : ";
+		cin >> wybor;
+		system("cls");
+
+
+		switch (wybor)
+		{
+		case 1:
+			TworzenieKolejki();
+			display_menu_operations();
+			break;
+		case 2:
+			Teoria();
+			break;
+		case 3:
+			cout << "Wyjscie z programu." << endl;
+			break;
+		}
+		system("PAUSE");
+		system("cls");
+	} while (wybor != 3);
+
+}
+
+
+int main()
+{
+	setlocale(LC_CTYPE, "Polish");
+	display_menu();
+
+	return 0;
+}
