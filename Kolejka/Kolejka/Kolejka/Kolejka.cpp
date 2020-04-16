@@ -20,7 +20,18 @@ int Random()
 
 void Teoria()
 {
-	cout << "Teoria" << endl;
+	int wybor;
+	do
+	{
+		cout << "Kolejka to liniowa struktura danych, w której nowe dane dopisywane są na końcu kolejki, " << endl;
+		cout << "a z początku kolejki pobierane są dane do dalszego przetwarzania" << endl;
+		cout << "zwana również FIFO(ang.First In First Out – pierwszy wchodzi, pierwszy wychodzi)" << endl << endl;
+		cout << "Wciśnij cyfrę 0, żeby wrócić do menu ";
+		cin >> wybor;
+		system("cls");
+	} while (wybor != 0);
+
+	
 }
 void TworzenieKolejki()
 {
@@ -66,12 +77,13 @@ void display_menu_operations()
 		cout << "2.Sortowanie pierwszych wybranych paru liczb" << endl; //[15:30]
 		cout << "3.Sortowanie do n-tego elementu" << endl; //[16:00]
 		cout << "4.Sortowanie poprzez permutacje" << endl; //[18:55][21:25]
-		cout << "5.Warości min-max" << endl; //[16:00]
+		cout << "5.Warości min-max" << endl; //[32:45]
 		cout << "6.Liczenie ile razy pojawiła się dana liczba" << endl; //[22:40]
 		cout << "7.Wygeneruj nowy zespoł liczb" << endl; //
 		cout << "8.Wyświetl liczby" << endl; //
 		cout << "9.Dodaj liczby z pamięci podręcznej do kolejki." << endl;
 		cout << "10. Wyzeruj kolejkę" << endl;
+		cout << "11. Wróć do menu" << endl;
 		cout << "Wybieram : ";
 		cin >> wybor;
 		system("cls");
@@ -136,21 +148,19 @@ void display_menu_operations()
 			kolejkaLiczb.push(vektor[0]);
 			kolejkaLiczb.push(vektor[1]);
 			kolejkaLiczb.push(vektor[2]);
-			kolejkaLiczb.push(vektor[4]);
+			kolejkaLiczb.push(vektor[3]);
 			kolejkaLiczb.push(vektor[4]);
 			cout << "Dane zostały wprowadzone do kolejki " << '\n';  //działa
+			cout << "W kolejce znajduje sie " << kolejkaLiczb.size() << " liczb." << endl;
 			break;
 		case 10:
-			cout << "Ile elementów usunąć?" << endl;
-			cin >> ilosc_elementow_do_zerowania;
-			do 
+			while (kolejkaLiczb.empty() == false)
 			{
-				cout << kolejkaLiczb.front() << ", ";
 				kolejkaLiczb.pop();
-				ilosc_zerowania++;
-			} while (ilosc_zerowania == ilosc_elementow_do_zerowania);
-			
+			}			
 			cout << "Kolejka została wyzerowana" << '\n';
+			break;
+		case 11:
 			break;
 		}
 		system("PAUSE");
