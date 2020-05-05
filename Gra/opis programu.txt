@@ -1,0 +1,5 @@
+Jesteœ lotnikiem w trakcie wojny. Jednak¿e twój kraj zaraz upadnie pod naporem niezliczonych wojsk nieprzyjaciela. Pokonaj jak najwiêksz¹ liczbê samolotów przeciwnika, ¿eby ochroniæ swój kraj od zguby(i udowodniæ innym, ¿e jesteœ najlepszym graczem w grê w któr¹ grasz tylko ty)!
+
+Sterowanie
+Ruch -> strza³ki lewo-prawo
+Strzelanie -> spacja

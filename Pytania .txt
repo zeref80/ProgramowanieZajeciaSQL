@@ -1,0 +1,4 @@
+[] -> nazwa folderu
+
+[Gra]
+Nie mog¹ mi siê wczytaæ multimedia, kod czesciowo dzia³a, napisy równie¿ ale nie wyœwietlaj¹ siê grafiki i muzyka. Przeszuka³em internet i doda³em ( wg pytañ na forach) potrzebny dopisek do multimediów ale nie dzia³a na dal a trudno przetestowac kolizje, czy dzi³aj¹ strza³y etc jezeli nic nie widaæ(mam pusty ekran tylko z napisami). Wie pan mo¿e w czym jest problem?
