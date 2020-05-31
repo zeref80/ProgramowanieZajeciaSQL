@@ -2,3 +2,7 @@
 
 [Gra]
 Nie mog¹ mi siê wczytaæ multimedia, kod czesciowo dzia³a, napisy równie¿ ale nie wyœwietlaj¹ siê grafiki i muzyka. Przeszuka³em internet i doda³em ( wg pytañ na forach) potrzebny dopisek do multimediów ale nie dzia³a na dal a trudno przetestowac kolizje, czy dzi³aj¹ strza³y etc jezeli nic nie widaæ(mam pusty ekran tylko z napisami). Wie pan mo¿e w czym jest problem?
+
+
+[QRandomGenerator]
+Chcia³em zrobiæ od pocz¹tku samemu ale nie do koñca mi to wychodzi³o wiêc skorzysta³em z internetu. Chcia³em u¿yæ klasy QRandomGenerator Class z dokumentacji QT (nie ma co na nowo tworzyæ ko³a jak sam pan mawia, wiêc po co mam tworzyæ od pocz¹tku jeœli mam gotowe do tego narzêdzia) ale wyrzuca mi b³êdy, jakby nie widiza³ i nie móg³ zaimplementowaæ tej klasy. Wie pan o co mo¿e chodzi?
